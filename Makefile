@@ -105,6 +105,16 @@ DIST          = /usr/lib/alpha-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_platformsupport_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri \
@@ -202,6 +212,16 @@ Makefile: MyselfWord.pro /usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++/qmake.co
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_platformsupport_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri \
+		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
 		/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri \
@@ -265,6 +285,16 @@ Makefile: MyselfWord.pro /usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++/qmake.co
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_platformsupport_private.pri:
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri:
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qml_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quick_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickparticles_private.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri:
+/usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets_private.pri:
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri:
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri:
 /usr/lib/alpha-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri:
@@ -352,26 +382,26 @@ moc_ubuilder.cpp: unavigation.h \
 		uoutputwindow.h \
 		ueditwindow.h \
 		ubuilder.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include ubuilder.h -o moc_ubuilder.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include ubuilder.h -o moc_ubuilder.cpp
 
 moc_uchild.cpp: uhighlighter.h \
 		uchild.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uchild.h -o moc_uchild.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uchild.h -o moc_uchild.cpp
 
 moc_uprojectwizard.cpp: uprojectwizard.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uprojectwizard.h -o moc_uprojectwizard.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uprojectwizard.h -o moc_uprojectwizard.cpp
 
 moc_uprojectnavbar.cpp: uprojectnavbar.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uprojectnavbar.h -o moc_uprojectnavbar.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uprojectnavbar.h -o moc_uprojectnavbar.cpp
 
 moc_unavigation.cpp: unavigation.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include unavigation.h -o moc_unavigation.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include unavigation.h -o moc_unavigation.cpp
 
 moc_ueditwindow.cpp: ueditwindow.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include ueditwindow.h -o moc_ueditwindow.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include ueditwindow.h -o moc_ueditwindow.cpp
 
 moc_uoutputwindow.cpp: uoutputwindow.h
-	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/root/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uoutputwindow.h -o moc_uoutputwindow.cpp
+	/usr/lib/alpha-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/alpha-linux-gnu/qt5/mkspecs/linux-g++ -I/home/mirror-src/uoldev/MyselfWord -I/usr/include/alpha-linux-gnu/qt5 -I/usr/include/alpha-linux-gnu/qt5/QtPrintSupport -I/usr/include/alpha-linux-gnu/qt5/QtWidgets -I/usr/include/alpha-linux-gnu/qt5/QtGui -I/usr/include/alpha-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9.1 -I/usr/include/c++/4.9.1/alphaev6-unknown-linux-gnu -I/usr/include/c++/4.9.1/backward -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include -I/usr/lib/gcc/alphaev6-unknown-linux-gnu/4.9.1/include-fixed -I/usr/local/include -I/usr/include uoutputwindow.h -o moc_uoutputwindow.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
